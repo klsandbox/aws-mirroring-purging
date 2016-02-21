@@ -9,7 +9,8 @@
         "laravel/framework": "5.2.*",
         "league/flysystem-aws-s3-v3" : "~1.0",
         "guzzlehttp/guzzle": "~5.3|~6.0",
-        "twbs/bootstrap": "dev-master"
+        "twbs/bootstrap": "dev-master",
+        "klsandbox/db-scripts": "^0.4.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -52,5 +53,12 @@
     },
     "config": {
         "preferred-install": "dist"
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://satis.klsandbox.com/"
+        }
+    ]
+
 }
