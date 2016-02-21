@@ -40,12 +40,28 @@ class AwsS3Sync extends Command
      */
     public function handle(Schedule $schedule)
     {
-        $s3_first = Config::get("app.aws.s3_bucket_sync_first");
-        $s3_second = Config::get("app.aws.s3_bucket_sync_second");
-        $s3_sync = Config::get("app.aws.s3_sync_profile");
-        
-        $schedule->exec("aws s3 sync s3://{$s3_first} s3://{$s3_second} --delete --profile {$s3_sync}");
-        
+        $s3_first = config("awsmanager.s3_bucket_sync_first");
+        $s3_second = config("awsmanager.s3_bucket_sync_second");
+        $s3_sync = config("awsmanager.s3_sync_profile");
+
+        if (!$s3_first || !$s3_second || !$s3_sync)
+        {
+            $this->error('s3_bucket_sync_first, s3_bucket_sync_second, or s3_sync_profile not set');
+            return 1;
+        }
+
+        $this->comment("Sync backups from $s3_first to $s3_second");
+
+        $output = [];
+        $return = -1;
+
+        $command = "aws s3 sync s3://{$s3_first} s3://{$s3_second} --delete --profile {$s3_sync}";
+        $this->comment("Executing $command");
+        exec($command, $output, $return);
+
+        $this->comment(print_r($output, true));
+        $this->comment("Return : $return");
+
         $type = "AWS S3 SYNC completed.";
         ScheduleLog::setDataLog($type);
     }

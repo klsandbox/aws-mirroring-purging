@@ -64,26 +64,18 @@ return [
 
         's3_first' => [
             'driver' => 's3',
-//            'key'    => 'AKIAJT3IHN6PY3XITZ2Q',
-//            'secret' => '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',
-//            'region' => 'ap-southeast-1',
-//            'bucket' => 'scalehack-test-bucket-one',
-            'key'    => 'AKIAJMNPUPX3I62WFM4Q',
-            'secret' => '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',
-            'region' => 'eu-central-1',
-            'bucket' => 'pylypen',
+            'key'    => 'AKIAJT3IHN6PY3XITZ2Q',
+            'secret' => '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',
+            'region' => 'ap-southeast-1',
+            'bucket' => 'scalehack-test-bucket-one',
         ],
         
         's3_second' => [
             'driver' => 's3',
-//            'key'    => 'AKIAJBPLWIEL6KAKAS3A',
-//            'secret' => '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',
-//            'region' => 'ap-southeast-1',
-//            'bucket' => 'scalehack-test-bucket-two',
-            'key'    => 'AKIAJMNPUPX3I62WFM4Q',
-            'secret' => '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',
-            'region' => 'eu-central-1',
-            'bucket' => 'pylypen',
+            'key'    => 'AKIAJBPLWIEL6KAKAS3A',
+            'secret' => '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',
+            'region' => 'ap-southeast-1',
+            'bucket' => 'scalehack-test-bucket-two',
         ],
 
         'rackspace' => [
