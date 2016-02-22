@@ -63,6 +63,6 @@ class AwsS3Sync extends Command
         $this->comment("Return : $return");
 
         $type = "AWS S3 SYNC completed.";
-        ScheduleLog::setDataLog($type);
+        ScheduleLog::setDataLog($type, $output);
     }
 }
