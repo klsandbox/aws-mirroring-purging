@@ -559,16 +559,16 @@
         },
         {
             "name": "klsandbox/db-scripts",
-            "version": "v0.5",
+            "version": "v0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrwaim/DbScripts.git",
-                "reference": "b2e8df331901da4aa9fc780e73372a0464d4f59a"
+                "reference": "bcfea4e2da7081a7030c910ab463cc8a6abc9de9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrwaim/DbScripts/zipball/b2e8df331901da4aa9fc780e73372a0464d4f59a",
-                "reference": "b2e8df331901da4aa9fc780e73372a0464d4f59a",
+                "url": "https://api.github.com/repos/mrwaim/DbScripts/zipball/bcfea4e2da7081a7030c910ab463cc8a6abc9de9",
+                "reference": "bcfea4e2da7081a7030c910ab463cc8a6abc9de9",
                 "shasum": ""
             },
             "require": {
@@ -588,10 +588,10 @@
                 }
             ],
             "support": {
-                "source": "https://github.com/mrwaim/DbScripts/tree/v0.5",
+                "source": "https://github.com/mrwaim/DbScripts/tree/v0.6",
                 "issues": "https://github.com/mrwaim/DbScripts/issues"
             },
-            "time": "2016-02-28 10:17:40"
+            "time": "2016-02-28 11:23:39"
         },
         {
             "name": "laravel/framework",
