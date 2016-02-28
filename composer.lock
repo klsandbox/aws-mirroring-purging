@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2b40f88d9079f2b0607a17e9414e825b",
-    "content-hash": "ed4302387f98fe7294eed7984de7b714",
+    "hash": "2bfcc8b0baecb258524ef86f1d57825f",
+    "content-hash": "68ea3bffb22cec9ee5be658ccb96e4dc",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -559,20 +559,19 @@
         },
         {
             "name": "klsandbox/db-scripts",
-            "version": "v0.6",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrwaim/DbScripts.git",
-                "reference": "bcfea4e2da7081a7030c910ab463cc8a6abc9de9"
+                "reference": "c5f30d90983562381f1cacaca71924b7ddb93359"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrwaim/DbScripts/zipball/bcfea4e2da7081a7030c910ab463cc8a6abc9de9",
-                "reference": "bcfea4e2da7081a7030c910ab463cc8a6abc9de9",
+                "url": "https://api.github.com/repos/mrwaim/DbScripts/zipball/c5f30d90983562381f1cacaca71924b7ddb93359",
+                "reference": "c5f30d90983562381f1cacaca71924b7ddb93359",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "5.*",
                 "php": ">=5.4.0"
             },
             "type": "library",
@@ -588,10 +587,10 @@
                 }
             ],
             "support": {
-                "source": "https://github.com/mrwaim/DbScripts/tree/v0.6",
+                "source": "https://github.com/mrwaim/DbScripts/tree/master",
                 "issues": "https://github.com/mrwaim/DbScripts/issues"
             },
-            "time": "2016-02-28 11:23:39"
+            "time": "2016-02-28 11:36:14"
         },
         {
             "name": "laravel/framework",
@@ -3494,7 +3493,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "twbs/bootstrap": 20
+        "twbs/bootstrap": 20,
+        "klsandbox/db-scripts": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
