@@ -10,7 +10,7 @@
         "league/flysystem-aws-s3-v3" : "~1.0",
         "guzzlehttp/guzzle": "~5.3|~6.0",
         "twbs/bootstrap": "dev-master",
-        "klsandbox/db-scripts": "^0.4.0"
+        "klsandbox/db-scripts": "*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

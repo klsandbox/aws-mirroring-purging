@@ -26,6 +26,12 @@ Route::get('/', function () {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
+Route::group(['middleware' => ['root']], function () {
     Route::controller('logs', 'LogsController');
+});
+
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/home', 'HomeController@index');
 });
